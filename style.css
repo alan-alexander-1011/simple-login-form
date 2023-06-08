@@ -1,0 +1,104 @@
+:root{
+    --background: #22232e;
+    --form-background: #353649;
+    --form-color:#4e5675;
+    --login-button: #4e4f58;
+    --login-button-hovered: #858692;
+    --text-color: #ececec;
+    --form-border-when-focused: 5px solid #8f97bb;
+    --form-border: 2px solid #71768a;
+}
+
+html{
+    background-color: var(--background);
+}
+
+h1 {
+    position: absolute;
+    font-family: Cascadia Code,sans-serif;
+    left:50%;
+    top:7%;
+    font-size: 45px;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+.form{
+    width: 400px;
+    height: 450px;
+    border-radius: 7px;
+    background-color: var(--form-background);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login{
+    position: absolute;
+
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+    color:var(--text-color);
+    width:100px;
+    border:none;
+    background-color: var(--login-button);
+    border-radius:2px;
+    font-size: 17.5px;
+
+    transition: 300ms;
+}
+
+.login:hover{
+    transform: translate(-50%,-50%);
+    width:110px;
+
+    background-color: var(--login-button-hovered);
+}
+
+.username{
+    position: absolute;
+
+    top:33%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    color:var(--text-color);
+    height: 28px;
+    width:240px;
+    border-width: 2px;
+    border: var(--form-border);
+    border-radius: 3px;
+    background-color: var(--form-color);
+    text-align: center;
+
+    -webkit-transition: 350ms;
+    transition: 350ms;
+}
+
+.password{
+    position: absolute;
+
+    top: 53%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    color:var(--text-color);
+    height: 28px;
+    width:240px;
+    border: var(--form-border);
+    border-radius: 3px;
+    background-color: var(--form-color);
+    text-align: center;
+
+    -webkit-transition: 350ms;
+    transition: 350ms;
+}
+
+.username:focus, .password:focus{
+    border: var(--form-border-when-focused);
+    border-radius: 3px;
+    background-color: var(--form-color);
+}
